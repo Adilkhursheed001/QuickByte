@@ -1,0 +1,45 @@
+.Order-Online-header{
+    display: flex;
+
+}
+
+.brand-name{
+    margin-left: 200px;
+    margin-top: 20px;
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.authorization{
+    display: flex;
+    margin-left: 780px;
+    gap: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.authorization span{
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+    font-size: large;
+    
+}
+.cartItem-cnt{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(239, 79, 95);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    right: 62px;
+    bottom: 10px;
+    font-size: 13px;
+}

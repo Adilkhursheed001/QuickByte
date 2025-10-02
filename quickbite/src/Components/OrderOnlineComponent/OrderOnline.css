@@ -1,0 +1,44 @@
+.order-heading{  
+    margin-top: 100px;
+    margin-left: 200px;
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+}
+
+.restaurants{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 30px; /* Adds space between the columns */
+    width: 72%;
+    height: 200px;
+    margin-left: 200px;
+    margin-top: 45px;
+}
+
+ .order-grid-item{
+    border-radius: 5%;
+    height: 350px;
+    width: 100%;
+    padding: 10px;
+    transition: box-shadow 0.2s ease;   
+}
+h4{
+    font-family: "Open Sans", serif;
+    font-weight: 650;
+    margin-bottom: 5px;
+}
+.order-grid-item p{
+  margin-top: 5px;
+}
+.order-grid-item img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.order-grid-item:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

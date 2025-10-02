@@ -1,0 +1,102 @@
+.pizza-cave-conatiner{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.pizza-cave-heading{
+    font-family: "Open Sans", serif;
+    font-weight:500;
+    font-style: normal;
+    font-size: 30px;
+    margin-left: 200px;
+    margin-top: 80px;
+}
+
+.pizza-cave-image{
+    display: flex;
+    gap: 10px;
+    height: 350px;
+    width: 60%px;
+    margin-left: 200px;
+    overflow: hidden;
+}
+
+.pizza-cave-image img {
+    transition: transform 0.4s ease; /* Apply transition to the image */
+    transform-origin: center; /* Ensure the scale happens from the center */
+}
+
+.pizza-cave-image img:hover {
+    cursor: pointer;
+    transform: scale(1.02); /* Use 'transform' for scaling */
+}
+
+.pizza-cave-image-div1{
+  width: 60%;
+  height: 100%;
+}
+.pizza-cave-image-div1 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.pizza-cave-image-div2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+    height: 100%;
+}
+
+.pizza-cave-image-div2 img{
+    object-fit: cover;
+    width: 50%;
+    height: 50%;
+}
+/* Order online and overview Section */
+
+
+.pizza-cave-menu-order-headercontainer{
+    display: flex;
+    width: 70%;
+    margin-top: 20px;
+    gap: 50px;
+    margin-left: 200px;
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 3px;
+
+}
+
+.pizza-cave-header{
+    font-family: "Open Sans", serif;
+    font-style: normal;
+    cursor: pointer;
+    position: relative;  
+}
+
+.pizza-cave-header h3{
+    margin-bottom: 10px;  
+    font-weight: 500; 
+}
+
+.pizza-cave-header.active h3 {
+    color:rgb(255, 126, 139);
+  }
+  
+.pizza-cave-header::after {
+    content: "";
+    position: absolute;
+    left: 50%; /* Start from the center */
+    width: 0; /* Initial width is 0 */
+    height: 4px;
+    background-color: rgb(255, 126, 139); /* Red color */
+    transform: translateX(-50%); /* Center align the line */
+    transition: width 0.3s ease; /* Animate the width */
+    
+}
+
+.pizza-cave-header.active::after {
+    width: 100%; /* Stretch the line to the full width */
+    bottom: -14px; /* Move the border 5px down from the bottom of the element */
+}

@@ -1,0 +1,40 @@
+.PizzaCave-Overview-Conatiner{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-family: "Open Sans", serif;
+    font-style: normal;
+    margin-left: 200px;
+    font-size: 17px;
+    font-weight:600;
+
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    
+}
+.cuisines,.topdishes{
+   font-size: 14px;
+   font-weight: 500;
+}
+.items{
+    display: flex;
+    gap: 20px;
+    font-weight: 300;
+    margin-left: 10px;
+}
+.items p{
+    border: 2px solid #FFF2CC;
+    border-radius: 20px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #674B00;
+    
+}
